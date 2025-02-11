@@ -1,7 +1,8 @@
 # bank.py
 # This program reads in two amounts in cents and prints their sums out in euros
 # Author: Hewa Orang
-# Reference: I used ChatGPT to get the conversion 
+# Reference: I used ChatGPT to get the conversion https://chatgpt.com/c/67ab604e-0070-8006-82b4-8a7e87e2f558
+
 
 
 # This reads two values in cents
