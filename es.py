@@ -4,7 +4,7 @@
 
 
 
-FILENAME = "moby-dick.txt"
+FILENAME = "moby-dick1.txt"
 
 
 with open(FILENAME, 'r') as f:
