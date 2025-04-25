@@ -6,20 +6,20 @@
 import sys  
 import os
 
-# # make sure the user provided a filepath as an argument to our script
+# make sure the user provided a filepath as an argument to our script
 if len(sys.argv) < 2:
     print("Error: Please provide filepath")
     exit(1)
 # 
-FILENAME = sys.argv[1]
+file_name = sys.argv[1]
 
-if not os.path.exists(FILENAME):
-    print("Error: filepath: {} doesn't exists!".format(FILENAME))
+if not os.path.exists(file_name):
+    print("Error: filepath: {} doesn't exists!".format(file_name))
     exit(1)
 
 # FILENAME = input("enter your file name")
 
-with open(FILENAME, 'r') as f:
+with open(file_name, 'r') as f:
     letter = f.read()
     e_count =letter.count('e')
     print("Number of e's:", e_count)
