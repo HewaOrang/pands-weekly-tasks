@@ -4,15 +4,16 @@
 # Author: Hewa Orang
 # Reference: https://www.w3schools.com/python/python_ml_normal_data_distribution.asp
 
-import numpy as np
+# Imports libraries
+import numpy as np 
 import matplotlib.pyplot as plt
 
 # Create figure and axis
 fig, ax = plt.subplots()
 
 # Generate normal distribution data.
-np.random.seed(1) 
-normal_dist = np.random.normal(5.0, 2.0, 1000)
+np.random.seed(1)   # set seed to produce the same random number set every time the program is ran.
+normal_dist = np.random.normal(5.0, 2.0, 1000)  # Mean=5, Std=2, 1000 samples
 
 # Plot histogram on the same axes.
 ax.hist(normal_dist, bins=30, alpha=0.6, label= 'Normal Distribution (mean=5, std=2)')
