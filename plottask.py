@@ -7,26 +7,31 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
+# Create figure and axis
 fig, ax = plt.subplots()
 
-'''
+# Generate normal distribution data.
 np.random.seed(1) 
 normal_dist = np.random.normal(5.0, 2.0, 1000)
 
-plt.hist(normal_dist)
-plt.show()
+# Plot histogram on the same axes.
+ax.hist(normal_dist, bins=30, alpha=0.6, label= 'Normal Distribution (mean=5, std=2)')
 
-'''
-
+# Generate x values for h(x) = x³
 x = np.linspace(0.0, 10.0, 400)
 h = x**3
 
-ax.plot(x, h, label= 'h(x) = x³')
-ax.set_title('function h(x)=x³')
+# Plot the function on the same axes
+ax.plot(x, h, color= 'red', label= 'h(x) = x³')
+
+# Set title and labels
+ax.set_title('Histogram & function h(x)=x³')
 ax.set_xlabel('x')
 ax.set_ylabel('h(x)')
+
+# Show legend
 ax.legend()
 
+# Saves and shows the figure
 plt.savefig('WT8_functionplot')
-
+plt.show()
