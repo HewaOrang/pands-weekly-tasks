@@ -15,7 +15,7 @@ file_name = sys.argv[1]   # get the filename from the command line argument
 
 if not os.path.exists(file_name):   # Check if the file exists
     print("Error: filepath: {} doesn't exists!".format(file_name))
-    exit(1)     #exit the program if file not found
+    exit(1)     #exit the program if filename not found
 
 
 with open(file_name, 'r') as f:         # open the file in read mode

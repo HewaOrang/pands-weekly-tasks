@@ -13,5 +13,5 @@ weekday_name = calendar.day_name[date.weekday()] # Finding the name of weekday
 
 if weekday_name in ("Saturday", "Sunday"): # Checking if today is weekend print below
     print ("It is the weekend, yay!")
-else:                                      # If is week day print below
+else:                                      # If it is weekday print below
     print ("Yes, unfortunately today is a weekday")
